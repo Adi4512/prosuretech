@@ -1,7 +1,8 @@
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
 import Services from "./components/Services";
-
+import Testimonials from "./components/Testimonials";
 function App() {
   return (
     <>
@@ -10,6 +11,8 @@ function App() {
         {" "}
         <Hero />
         <Services />
+        <Testimonials />
+        <Footer />
       </div>
     </>
   );

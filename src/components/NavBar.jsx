@@ -2,7 +2,7 @@ import React from "react";
 import { Menu, MenuIcon, X } from "lucide-react";
 import { useState } from "react";
 import { navItems } from "../constants";
-import { i } from "framer-motion/client";
+import companyLogo from "../assets/companyLogo.jpeg";
 
 const NavBar = () => {
   const [drawer, setDrawer] = useState(false);
@@ -13,12 +13,12 @@ const NavBar = () => {
   return (
     <>
       <nav className="sticky top-0 z-40 py-3 backdrop-blur-lg border-b border-neutral-700/80">
-        <div className="container px-4 mx-auto relative text-sm ml-0 sm:ml-16">
+        <div className="container px-4 mx-auto relative text-sm">
           <div className="flex justify-between items-center">
             <div className="flex items-center flex-shrink-0">
               <img
                 className="h-10 w-10 mr-2 rounded-full"
-                src="https://picsum.photos/200"
+                src={companyLogo}
                 alt="Company-Logo"
               />
               <span className="text-xl tracking-tight cursor-pointer hover:text-slate-600 transition duration-300 ease-in-out">
