@@ -38,7 +38,7 @@ const NavBar = () => {
             <div className="hidden lg:flex justify-end ">
               <a
                 href="#"
-                className=" hover:text-black bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-3 rounded-xl font-semibold hover:bg-gradient-to-r hover:from-orange-700 hover:to-orange-900 transition duration-300 ease-in-out transform hover:scale-110"
+                className=" hover:text-black bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-3 rounded-xl hover:bg-gradient-to-r hover:from-orange-700 hover:to-orange-900 transition duration-300 ease-in-out transform hover:scale-110"
               >
                 Contact Us
               </a>

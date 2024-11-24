@@ -12,6 +12,8 @@ import { GlobeLock } from "lucide-react";
 // import user5 from "../assets/profile-pictures/user5.jpg";
 // import user6 from "../assets/profile-pictures/user6.jpg";
 
+export const Contact = { phone: "(123) 456-7890" };
+
 export const navItems = [
   { label: "Features", href: "#" },
   { label: "Workflow", href: "#" },
