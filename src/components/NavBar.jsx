@@ -31,7 +31,7 @@ const NavBar = () => {
                   key={index}
                   className="hover:text-slate-600 cursor-pointer transition duration-300 ease-in-out transform hover:scale-110"
                 >
-                  {item.label}
+                  <a href={item.href}>{item.label}</a>
                 </li>
               ))}
             </ul>

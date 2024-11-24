@@ -5,19 +5,12 @@ import { ShieldHalf } from "lucide-react";
 import { PlugZap } from "lucide-react";
 import { GlobeLock } from "lucide-react";
 
-// import user1 from "../assets/profile-pictures/user1.jpg";
-// import user2 from "../assets/profile-pictures/user2.jpg";
-// import user3 from "../assets/profile-pictures/user3.jpg";
-// import user4 from "../assets/profile-pictures/user4.jpg";
-// import user5 from "../assets/profile-pictures/user5.jpg";
-// import user6 from "../assets/profile-pictures/user6.jpg";
-
 export const Contact = { phone: "(123) 456-7890" };
 
 export const navItems = [
-  { label: "Features", href: "#" },
-  { label: "Workflow", href: "#" },
-  { label: "Pricing", href: "#" },
+  { label: "Home", href: "/" },
+  { label: "Services", href: "#" },
+  { label: "Support", href: "#" },
   { label: "Testimonials", href: "#" },
 ];
 
@@ -32,7 +25,7 @@ export const testimonials = [
     user: "Jane Smith",
     company: "Blue Horizon Technologies",
     // image: user2,
-    text: "I couldn't be happier with the outcome of our project. The team's creativity and problem-solving skills were instrumental in bringing our vision to life",
+    text: "I couldn't be happier with the outcome of our project. The team's incredible and Hard-working",
   },
   {
     user: "David Johnson",
@@ -44,7 +37,7 @@ export const testimonials = [
     user: "Ronee Brown",
     company: "Fusion Dynamics",
     // image: user4,
-    text: "Working with the team at XYZ Company was a game-changer for our project. Their attention to detail and innovative solutions helped us achieve our goals faster than we thought possible. We are grateful for their expertise and professionalism!",
+    text: "Working with the team at ProSureTech was a game-changer for our project. Their attention to detail and innovative solutions helped us achieve our goals faster than we thought possible. We are grateful for their expertise and professionalism!",
   },
   {
     user: "Michael Wilson",
@@ -63,39 +56,39 @@ export const testimonials = [
 export const features = [
   {
     icon: <BotMessageSquare />,
-    text: "Drag-and-Drop Interface",
+    text: "Sustainability Consulting",
     description:
-      "Easily design and arrange your VR environments with a user-friendly drag-and-drop interface.",
+      "Empowering your business with sustainable solutions for a greener tomorrow.",
   },
   {
     icon: <Fingerprint />,
-    text: "Multi-Platform Compatibility",
+    text: "Project Management Consulting",
     description:
-      "Build VR applications that run seamlessly across multiple platforms, including mobile, desktop, and VR headsets.",
+      "Streamlining your projects for success with expert management and strategic guidance.",
   },
   {
     icon: <ShieldHalf />,
-    text: "Built-in Templates",
+    text: "Training & Development",
     description:
-      "Jumpstart your VR projects with a variety of built-in templates for different types of applications and environments.",
+      "Unlock your team's full potential with tailored training programs.Drive growth and success through continuous development and skill enhancement.",
   },
   {
     icon: <BatteryCharging />,
-    text: "Real-Time Preview",
+    text: "EHS Consulting",
     description:
-      "Preview your VR application in real-time as you make changes, allowing for quick iterations and adjustments.",
+      "Enhance your business’s safety and sustainability with expert EHS Consulting services. We help you navigate regulations, mitigate risks, and create a healthier, more compliant workplace.",
   },
   {
     icon: <PlugZap />,
-    text: "Collaboration Tools",
+    text: "ESG Consulting",
     description:
-      "Work together with your team in real-time on VR projects, enabling seamless collaboration and idea sharing.",
+      "Drive sustainable growth with our expert ESG consulting services. We help you integrate environmental, social, and governance practices that boost reputation and long-term value.",
   },
   {
     icon: <GlobeLock />,
-    text: "Analytics Dashboard",
+    text: "Manpower Management",
     description:
-      "Gain valuable insights into user interactions and behavior within your VR applications with an integrated analytics dashboard.",
+      "Optimize your workforce with our strategic Manpower Management services. We help you align talent with business goals, ensuring efficiency and growth.",
   },
 ];
 
@@ -122,59 +115,43 @@ export const checklistItems = [
   },
 ];
 
-export const pricingOptions = [
-  {
-    title: "Free",
-    price: "$0",
-    features: [
-      "Private board sharing",
-      "5 Gb Storage",
-      "Web Analytics",
-      "Private Mode",
-    ],
-  },
-  {
-    title: "Pro",
-    price: "$10",
-    features: [
-      "Private board sharing",
-      "10 Gb Storage",
-      "Web Analytics (Advance)",
-      "Private Mode",
-    ],
-  },
-  {
-    title: "Enterprise",
-    price: "$200",
-    features: [
-      "Private board sharing",
-      "Unlimited Storage",
-      "High Performance Network",
-      "Private Mode",
-    ],
-  },
-];
-
 export const resourcesLinks = [
-  { href: "#", text: "Getting Started" },
-  { href: "#", text: "Documentation" },
-  { href: "#", text: "Tutorials" },
-  { href: "#", text: "API Reference" },
-  { href: "#", text: "Community Forums" },
+  {
+    href: "https://www.linkedin.com/company/prosure-technologies",
+    text: "LinkedIn",
+  },
+  { href: "#", text: "Instagram" },
+  {
+    href: `https://wa.me/9981338473?text=${encodeURIComponent(
+      "Hi, Welcome to ProsureTech! How can we help you?"
+    )}`,
+    text: "Whatsapp",
+  },
+  { href: "tel:+917021171228", text: "Phone" },
+  { href: "mailto:J9GK8@example.com", text: "Mail" },
 ];
 
 export const platformLinks = [
-  { href: "#", text: "Features" },
-  { href: "#", text: "Supported Devices" },
-  { href: "#", text: "System Requirements" },
-  { href: "#", text: "Downloads" },
-  { href: "#", text: "Release Notes" },
+  { href: "tel:+917021171228", text: "Phone: (+91) 7021171228" },
+  {
+    href: "https://www.google.com/maps?osid=31047da7-1782-40cb-9706-afdbf1f2677c&cp=22.845057~75.872194&lvl=12.00713&pi=0&v=2&sV=2&form=S00027",
+    text: "Headquarters: Indore(M.P),india",
+  },
+  { href: "#", text: "Safety Consultant Firm" },
 ];
 
 export const communityLinks = [
-  { href: "#", text: "Events" },
-  { href: "#", text: "Meetups" },
-  { href: "#", text: "Conferences" },
-  { href: "#", text: "Hackathons" },
-  { href: "#", text: "Jobs" },
+  {
+    href: "https://www.linkedin.com/company/prosure-technologies/posts/",
+    text: "Events",
+  },
+  {
+    href: "https://www.linkedin.com/company/prosure-technologies/posts/",
+    text: "Meetups",
+  },
+
+  {
+    href: "https://www.linkedin.com/company/prosure-technologies/jobs/",
+    text: "Jobs",
+  },
 ];
