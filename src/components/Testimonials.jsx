@@ -1,5 +1,6 @@
 import { testimonials } from "../constants";
 import Clients from "./Clients";
+import InfiniteScrollLogo from "./InfiniteScrollLogo";
 
 const Testimonials = () => {
   return (
@@ -8,6 +9,7 @@ const Testimonials = () => {
         Loved By Many 💖
       </h2>
       <Clients />
+      <InfiniteScrollLogo />
       <div className="flex flex-wrap justify-center">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-4 py-2">

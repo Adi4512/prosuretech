@@ -7,6 +7,13 @@ import { GlobeLock } from "lucide-react";
 
 export const Contact = { phone: "(123) 456-7890" };
 
+export const logos = [
+  {
+    image: "../assets/companyLogo/max.png",
+    alt: "logo",
+  },
+];
+
 export const navItems = [
   { label: "Home", href: "/" },
   { label: "Services", href: "#" },
