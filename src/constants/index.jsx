@@ -30,7 +30,7 @@ export const testimonials = [
   },
   {
     user: "Jane Smith",
-    company: "Blue Horizon Technologies",
+    company: "Blue Horizon Technologies Ltd",
     // image: user2,
     text: "I couldn't be happier with the outcome of our project. The team's incredible and Hard-working",
   },
