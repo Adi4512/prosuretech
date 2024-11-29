@@ -5,22 +5,22 @@ import { Contact } from "../constants";
 import video from "../assets/video.mp4";
 
 const Hero = () => {
-  //   useGSAP(() => {
-  //     gsap.fromTo(
-  //       "#getQuote",
-  //       {
-  //         y: 250,
-  //         opacity: 0,
-  //       },
-  //       {
-  //         opacity: 1,
-  //         y: 0,
-  //         duration: 1.5,
-  //         ease: "bounce.out",
-  //         delay: 0.5,
-  //       }
-  //     );
-  //   }, []);
+  // useGSAP(() => {
+  //   gsap.fromTo(
+  //     "#getQuote",
+  //     {
+  //       y: 250,
+  //       opacity: 0,
+  //     },
+  //     {
+  //       opacity: 1,
+  //       y: 0,
+  //       duration: 1,
+  //       ease: "bounce.inOut",
+  //       delay: 0.21,
+  //     }
+  //   );
+  // }, []);
 
   return (
     <div className="flex flex-col items-center mt-6 lg:mt-18">
@@ -56,7 +56,7 @@ const Hero = () => {
           rel="noopener noreferrer"
           className="cursor-pointer"
         >
-          Get Quote
+          Book A Call
         </a>
       </div>
       <div className="mt-10 justify-center flex">
