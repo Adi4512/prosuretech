@@ -49,7 +49,7 @@ const Hero = () => {
         className="cusror-pointer text-xl mt-8 hover:text-black bg-orange-500 py-3 px-5 rounded-xl hover:scale-105 transition duration-300 ease-in-out"
       >
         <a
-          href={`https://wa.me/9981338473?text=${encodeURIComponent(
+          href={`https://wa.me/7021171228?text=${encodeURIComponent(
             "Hi, Welcome to ProsureTech! How can we help you?"
           )}`}
           target="_blank"
