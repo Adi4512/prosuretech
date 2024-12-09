@@ -3,6 +3,8 @@ import { Menu, MenuIcon, X } from "lucide-react";
 import { useState } from "react";
 import { navItems } from "../constants";
 import companyLogo from "../assets/companyLogo.jpeg";
+import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   const [drawer, setDrawer] = useState(false);
@@ -31,17 +33,34 @@ const NavBar = () => {
                   key={index}
                   className="hover:text-slate-600 cursor-pointer transition duration-300 ease-in-out transform hover:scale-110"
                 >
-                  <a href={item.href}>{item.label}</a>
+                  {item.target === "_blank" ? (
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {item.label}
+                    </a>
+                  ) : (
+                    <Link
+                      to={item.href}
+                      smooth={true}
+                      offset={50}
+                      duration={1000}
+                    >
+                      {item.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
             <div className="hidden lg:flex justify-end ">
-              <a
-                href="#"
+              <NavLink
+                to="/contact"
                 className=" hover:text-black bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-3 rounded-xl hover:bg-gradient-to-r hover:from-orange-700 hover:to-orange-900 transition duration-300 ease-in-out transform hover:scale-110"
               >
                 Contact Us
-              </a>
+              </NavLink>
             </div>
             <div className="flex flex-col lg:hidden z-50">
               <button onClick={toggleDrawer} className="p-2">

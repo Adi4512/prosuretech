@@ -4,21 +4,125 @@ import { Fingerprint } from "lucide-react";
 import { ShieldHalf } from "lucide-react";
 import { PlugZap } from "lucide-react";
 import { GlobeLock } from "lucide-react";
+import { Link } from "react-scroll";
+import service from "../assets/Our_Services_PROSURE_Technologies.pdf";
+//Logos
+import logo1 from "../assets/companyLogo/Airport.png";
+import logo2 from "../assets/companyLogo/bb.jpeg";
+import logo3 from "../assets/companyLogo/Brookfield.png";
+import logo4 from "../assets/companyLogo/Cushman.png";
+import logo5 from "../assets/companyLogo/DLF.png";
+import logo6 from "../assets/companyLogo/indian.png";
+import logo7 from "../assets/companyLogo/KSMB.png";
+import logo8 from "../assets/companyLogo/max.png";
+import logo9 from "../assets/companyLogo/Megha.png";
+import logo10 from "../assets/companyLogo/meil.png";
+import logo11 from "../assets/companyLogo/Nestle.png";
+import logo12 from "../assets/companyLogo/ongc.png";
+import logo13 from "../assets/companyLogo/patanjali.png";
+import logo14 from "../assets/companyLogo/Pharmeasy.png";
+import logo15 from "../assets/companyLogo/power.png";
+import logo16 from "../assets/companyLogo/ramk.png";
+import logo17 from "../assets/companyLogo/sainik.png";
+import logo18 from "../assets/companyLogo/SPM.png";
+import logo19 from "../assets/companyLogo/V.png";
+import logo20 from "../assets/companyLogo/Stylam-LOGO.png";
+import logo21 from "../assets/companyLogo/Fourth_Partner_Energy_logo.png";
 
 export const Contact = { phone: "(123) 456-7890" };
 
 export const logos = [
   {
-    image: "../assets/companyLogo/max.png",
-    alt: "logo",
+    src: logo1,
+    alt: "logos",
+  },
+  {
+    src: logo2,
+    alt: "logos",
+  },
+  {
+    src: logo3,
+    alt: "logos",
+  },
+  {
+    src: logo4,
+    alt: "logos",
+  },
+  {
+    src: logo5,
+    alt: "logos",
+  },
+  {
+    src: logo6,
+    alt: "logos",
+  },
+  {
+    src: logo7,
+    alt: "logos",
+  },
+  {
+    src: logo8,
+    alt: "logos",
+  },
+  {
+    src: logo9,
+    alt: "logos",
+  },
+  {
+    src: logo10,
+    alt: "logos",
+  },
+  {
+    src: logo11,
+    alt: "logos",
+  },
+  {
+    src: logo12,
+    alt: "logos",
+  },
+  {
+    src: logo13,
+    alt: "logos",
+  },
+  {
+    src: logo14,
+    alt: "logos",
+  },
+  {
+    src: logo15,
+    alt: "logos",
+  },
+  {
+    src: logo16,
+    alt: "logos",
+  },
+  {
+    src: logo17,
+    alt: "logos",
+  },
+  {
+    src: logo18,
+    alt: "logos",
+  },
+  {
+    src: logo19,
+    alt: "logos",
+  },
+  {
+    src: logo20,
+    alt: "logos",
+  },
+  {
+    src: logo21,
+    alt: "logos",
   },
 ];
 
 export const navItems = [
-  { label: "Home", href: "/" },
-  { label: "Services", href: "#" },
-  { label: "Support", href: "#" },
-  { label: "Testimonials", href: "#" },
+  { label: "Home", href: "home" },
+  { label: "Services", href: service, target: "_blank" },
+  { label: "Support", href: "footer" },
+  { label: "Testimonials", href: "testimonials" },
 ];
 
 export const testimonials = [

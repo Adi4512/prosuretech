@@ -14,3 +14,23 @@
     animation-play-state: paused;
   }
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.infinite-scroll-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.animate-scroll {
+  display: flex;
+  gap: 2rem; /* Adjust spacing between logos */
+  animation: scroll 30s linear infinite; /* Adjust duration for speed */
+}
