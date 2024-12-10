@@ -28,6 +28,12 @@ import logo18 from "../assets/companyLogo/SPM.png";
 import logo19 from "../assets/companyLogo/V.png";
 import logo20 from "../assets/companyLogo/Stylam-LOGO.png";
 import logo21 from "../assets/companyLogo/Fourth_Partner_Energy_logo.png";
+import img1 from "../assets/contactimg/image1.jpeg";
+import img2 from "../assets/contactimg/image2.jpeg";
+import img3 from "../assets/contactimg/image3.jpeg";
+import img4 from "../assets/contactimg/image4.jpeg";
+import img5 from "../assets/contactimg/image5.jpeg";
+import img6 from "../assets/contactimg/image6.jpeg";
 
 export const Contact = { phone: "(123) 456-7890" };
 
@@ -117,7 +123,32 @@ export const logos = [
     alt: "logos",
   },
 ];
-
+export const img = [
+  {
+    src: img1,
+    alt: "img1",
+  },
+  {
+    src: img2,
+    alt: "img2",
+  },
+  {
+    src: img3,
+    alt: "img3",
+  },
+  {
+    src: img4,
+    alt: "img4",
+  },
+  {
+    src: img5,
+    alt: "img5",
+  },
+  {
+    src: img6,
+    alt: "img6",
+  },
+];
 export const navItems = [
   { label: "Home", href: "home" },
   { label: "Services", href: service, target: "_blank" },
