@@ -245,7 +245,7 @@ export const resourcesLinks = [
 export const platformLinks = [
   { href: "tel:+917021171228", text: "Phone: (+91) 7021171228" },
   {
-    href: "https://www.google.com/maps?osid=31047da7-1782-40cb-9706-afdbf1f2677c&cp=22.845057~75.872194&lvl=12.00713&pi=0&v=2&sV=2&form=S00027",
+    href: "https://www.google.com/maps?q=22.814746652151953, 75.90100561524319",
     text: "Headquarters: Indore(M.P),india",
   },
   { href: "#", text: "Safety Consultant Firm" },
