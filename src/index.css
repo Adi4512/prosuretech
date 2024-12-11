@@ -32,7 +32,7 @@
 .animate-scroll {
   display: flex;
   gap: 2rem; /* Adjust spacing between logos */
-  animation: scroll 30s linear infinite; /* Adjust duration for speed */
+  animation: scroll 80s linear infinite; /* Adjust duration for speed */
 }
 
 @layer base {

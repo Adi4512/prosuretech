@@ -23,7 +23,7 @@ const Hero = () => {
   // }, []);
 
   return (
-    <div id="home" className="flex flex-col items-center mt-6 lg:mt-18">
+    <div id="home" className="flex flex-col items-center mt-6 lg:mt-18 ">
       <h1 className="text-4xl lg:text-7xl sm:text-6xl text-center tracking-wide">
         Your Safety,
         <span className="bg-gradient-to-r from-orange-500 to-red-800 bg-clip-text text-transparent">

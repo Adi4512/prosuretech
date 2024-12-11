@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <div className="relative mt-20 border-b border-neutral-800 min-h-[800px]">
       <div className="text-center">
-        <span className="h-6 font-medium px-2 py-1 text-orange-500 rounded-full uppercase text-xl bg-neutral-900">
+        <span className="h-6 font-medium px-5 py-2 text-orange-500 rounded-full uppercase text-xl bg-neutral-900">
           services
         </span>
         <h2 className="text-3xl sm:text-5xl lg:text-4xl mt-10 lg:mt-20 tracking-wide">
