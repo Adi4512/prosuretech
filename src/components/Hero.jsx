@@ -17,7 +17,7 @@ const Hero = () => {
   //       y: 0,
   //       duration: 1,
   //       ease: "bounce.inOut",
-  //       delay: 0.21,
+  //       delay: 0,
   //     }
   //   );
   // }, []);
