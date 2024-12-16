@@ -1,5 +1,5 @@
 import React from "react";
-import { Menu, MenuIcon, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { navItems } from "../constants";
 import companyLogo from "../assets/companyLogo.jpeg";
@@ -9,24 +9,34 @@ import { NavLink } from "react-router-dom";
 const NavBar = () => {
   const [drawer, setDrawer] = useState(false);
 
+  // Toggle the mobile drawer
   const toggleDrawer = () => {
     setDrawer(!drawer);
   };
+
+  // Close drawer and ensure scrolling is restored
+  const closeDrawer = () => {
+    setDrawer(false);
+  };
+
   return (
     <>
-      <nav className="sticky top-0 z-40 py-3 backdrop-blur-lg border-b border-neutral-700/80 ">
+      <nav className="sticky top-0 z-40 py-3 backdrop-blur-lg border-b border-neutral-700/80">
         <div className="container px-4 mx-auto relative text-sm">
           <div className="flex justify-between items-center">
+            {/* Logo Section */}
             <div className="flex items-center flex-shrink-0">
               <img
                 className="h-10 w-10 mr-2 rounded-full"
                 src={companyLogo}
-                alt="Company-Logo"
+                alt="Company Logo"
               />
               <span className="text-xl tracking-tight cursor-pointer hover:text-slate-600 transition duration-300 ease-in-out">
                 <a href="/">ProSure Technology</a>
               </span>
             </div>
+
+            {/* Desktop Navigation */}
             <ul className="hidden lg:flex space-x-12 mr-32">
               {navItems.map((item, index) => (
                 <li
@@ -45,7 +55,7 @@ const NavBar = () => {
                     <Link
                       to={item.href}
                       smooth={true}
-                      offset={50}
+                      offset={-70}
                       duration={1000}
                     >
                       {item.label}
@@ -54,14 +64,18 @@ const NavBar = () => {
                 </li>
               ))}
             </ul>
-            <div className="hidden lg:flex justify-end ">
+
+            {/* Desktop Contact Button */}
+            <div className="hidden lg:flex justify-end">
               <NavLink
                 to="/contact"
-                className=" hover:text-black bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-3 rounded-xl hover:bg-gradient-to-r hover:from-orange-700 hover:to-orange-900 transition duration-300 ease-in-out transform hover:scale-110"
+                className="hover:text-black bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-3 rounded-xl hover:bg-gradient-to-r hover:from-orange-700 hover:to-orange-900 transition duration-300 ease-in-out transform hover:scale-110"
               >
                 Contact Us
               </NavLink>
             </div>
+
+            {/* Mobile Drawer Toggle */}
             <div className="flex flex-col lg:hidden z-50">
               <button onClick={toggleDrawer} className="p-2">
                 {drawer ? (
@@ -72,18 +86,29 @@ const NavBar = () => {
               </button>
             </div>
           </div>
+
+          {/* Mobile Drawer */}
           {drawer && (
-            <div className=" fixed top-[64px] left-0 z-30 flex flex-col items-center justify-center w-full  bg-neutral-900 p-12">
+            <div className="fixed top-[64px] left-0 z-50 w-full bg-neutral-900 text-center p-6 flex flex-col gap-4">
               {navItems.map((item, index) => (
-                <ul key={index}>
-                  <li className="py-4 hover:text-slate-600 cursor-pointer transition duration-300 ease-in-out transform hover:scale-110">
-                    {item.label}
-                  </li>
-                </ul>
+                <Link
+                  key={index}
+                  to={item.href}
+                  smooth={true}
+                  duration={1000}
+                  className="py-2 text-white cursor-pointer hover:text-slate-400"
+                  onClick={closeDrawer} // Close drawer on click
+                >
+                  {item.label}
+                </Link>
               ))}
-              <div className="mt-4 hover:text-black bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-3 rounded-xl font-semibold hover:bg-gradient-to-r hover:from-orange-700 hover:to-orange-900 transition duration-300 ease-in-out transform hover:scale-110">
+              <NavLink
+                to="/contact"
+                className="text-white bg-orange-700 py-2 px-4 rounded hover:bg-orange-600"
+                onClick={closeDrawer} // Close drawer
+              >
                 Contact Us
-              </div>
+              </NavLink>
             </div>
           )}
         </div>
