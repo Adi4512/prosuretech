@@ -14,7 +14,6 @@ import logo5 from "../assets/companyLogo/DLF.png";
 import logo6 from "../assets/companyLogo/indian.png";
 import logo7 from "../assets/companyLogo/KSMB.png";
 import logo8 from "../assets/companyLogo/max.png";
-// import logo9 from "../assets/companyLogo/Megha.png";
 import logo10 from "../assets/companyLogo/meil.png";
 import logo11 from "../assets/companyLogo/Nestle.png";
 import logo12 from "../assets/companyLogo/ongc.png";
@@ -69,10 +68,6 @@ export const logos = [
     src: logo8,
     alt: "logos",
   },
-  // {
-  //   src: logo9,
-  //   alt: "logos",
-  // },
   {
     src: logo10,
     alt: "logos",
